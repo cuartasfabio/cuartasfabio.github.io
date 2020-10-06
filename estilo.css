@@ -27,6 +27,20 @@ h2 {
 
 p::first-letter { font-size: large }
 
+
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid #ee2e3152;
+    width: 75%;
+    margin: 16px;
+    padding: 16px;
+}
+
+th {
+    height: 50px;
+}
+
+
 /* a=0 b=0 c=1 -> specificity =   1 */
 header{
 	padding: 16px 48px;
