@@ -1,0 +1,18 @@
+/*----Posicionamiento----*/
+
+.derecha {
+    float:right;
+}
+.izquierda {
+    float:left;
+}
+
+.clearIzq {
+    clear:left;
+}
+.clearDer {
+    clear:right;
+}
+.clearTodo {
+    clear:both;
+}
