@@ -2,7 +2,7 @@
 /* a=0 b=0 c=1 -> specificity =   1 */
 h1 {
     font-family: "Jazz LET", fantasy;
-    font-size: 6em;
+    font-size: 4em;
     font-stretch: extra-expanded;
     font-weight: normal;
     color: #ff595c;
@@ -28,7 +28,7 @@ h2 {
 /* a=0 b=0 c=2 -> specificity =  2 */
 hgroup h2 {
     font-family: "Jazz LET", fantasy;
-    font-size: 4em;
+    font-size: 3em;
     font-stretch: extra-expanded;
     margin: 16px 4px 16px 32px;
 }
