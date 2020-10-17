@@ -2,6 +2,7 @@
 /* a=0 b=0 c=1 -> specificity =   1 */
 h1 {
     font-family: "Jazz LET", fantasy;
+    font-size: 3em;
     font-stretch: extra-expanded;
     font-weight: normal;
     color: #ff595c;
@@ -51,12 +52,12 @@ th {
 
 /* a=0 b=0 c=1 -> specificity =   1 */
 header{
-	padding: 16px 48px;
+	padding: 16px 48px 96px 48px;
     border-width: 2px;  
     border-color: #EE2E31;
     border-style:  solid solid none solid;
     border-radius: 16px;
-    margin: 8px;
+    margin: 1em;
 
 }
 
