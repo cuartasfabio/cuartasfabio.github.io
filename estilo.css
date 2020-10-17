@@ -5,7 +5,7 @@ h1 {
     font-size: 100px;
     font-stretch: extra-expanded;
     font-weight: normal;
-    color: #EE2E31;
+    color: #ff595c;
     /*background-color heredado de body*/
     text-shadow: 4px 4px 8px #000000;
     letter-spacing: 4px;
@@ -15,7 +15,7 @@ h1 {
 h2 {
     font-family: Verdana, sans-serif;
     font-weight: bold;
-    color: #EE2E31;
+    color: #ff595c;
     /*background-color heredado de body*/
     text-shadow: 4px 4px 8px #000000;
     font-size: x-large;
@@ -99,21 +99,17 @@ body{
 a:link    /* unvisited links */{
     color:rgb(101, 255, 87);
     /*background-color heredado de body*/
-    text-decoration-color: lightblue;
 }
 a:visited /* visited links */{
-    color:rgb(210, 133, 255);
+    color:rgb(234, 198, 255);
     /*background-color heredado de body*/
-    text-decoration-color: thistle;
 }
 a:hover   /* user hovers */{
     color:rgb(255, 226, 226);
     /*background-color heredado de body*/
-    text-decoration-color: khaki;
 }
 a:active  /* active links */{
-    color:rgb(255, 0, 0);
+    color:rgb(255, 140, 140);
     /*background-color heredado de body*/
-    text-decoration-color: thistle;
 }
 
