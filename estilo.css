@@ -7,9 +7,9 @@ h1 {
     font-weight: normal;
     color: #ff595c;
     /*background-color heredado de body*/
-    text-shadow: 0.25em 0.25em 0.5em #000000;
+    text-shadow: 4px 4px 8px #000000;
     letter-spacing: 0.25em;
-    margin: 1em 0.25em 1em 2em;
+    margin: 16px 4px 16px 32px;
 }
 /* a=0 b=0 c=1 -> specificity =   1 */
 h2 {
@@ -17,12 +17,12 @@ h2 {
     font-weight: bold;
     color: #ff595c;
     /*background-color heredado de body*/
-    text-shadow: 0.25em 0.25em 0.5em #000000;
+    text-shadow: 4px 4px 8px #000000;
     font-size: x-large;
-    padding: 0.25em 1em;
-    margin: 0.25em;
-    border-width: 0.125em;
-    border-radius: 0.5em;
+    padding: 4px 16px;
+    margin: 4px 4px 4px 4px;
+    border-width: 2px;
+    border-radius: 8px;
     border-color: #EE2E31;
 }
 /* a=0 b=0 c=2 -> specificity =  2 */
@@ -30,7 +30,7 @@ hgroup h2 {
     font-family: "Jazz LET", fantasy;
     font-size: 4em;
     font-stretch: extra-expanded;
-    margin: 1em 0.25em 1em 2em;
+    margin: 16px 4px 16px 32px;
 }
 
 /* a=0 b=0 c=2 -> specificity =  2 */
@@ -39,42 +39,42 @@ p::first-letter { font-size: large }
 /* a=0 b=0 c=3 -> specificity =   3 */
 table, th, td {
     border-collapse: collapse;
-    border: 0.125em solid #ee2e3152;
+    border: 2px solid #ee2e3152;
     width: 75%;
-    margin: 1em;
-    padding: 1em;
+    margin: 16px;
+    padding: 16px;
 }
 
 /* a=0 b=0 c=1 -> specificity =   1 */
 th {
-    height: 3em;
+    height: 50px;
 }
 
 
 /* a=0 b=0 c=1 -> specificity =   1 */
 header{
-	padding: 1em 3em;
-    border-width: 0.125em;  
+	padding: 16px 48px;
+    border-width: 2px;  
     border-color: #EE2E31;
     border-style:  solid solid none solid;
-    border-radius: 1em;
-    margin: 0.5em;
+    border-radius: 16px;
+    margin: 8px;
 
 }
 
 /* a=0 b=0 c=1 -> specificity =   1 */
 aside{
-    padding: 0.25em 3em; 
+    padding: 4px 45px; 
 }
 
 /* a=0 b=0 c=1 -> specificity =   1 */
 section{
-	padding: 0.25em 3em 1em 3em;
-    border-width: 0.125em;  
+	padding: 4px 48px 16px 48px;
+    border-width: 2px;  
     border-color: #EE2E31;
     border-style:  solid solid none solid;
-    border-radius: 1em;
-    margin: 0.5em; 
+    border-radius: 16px;
+    margin: 8px; 
 }
 
 /* a=0 b=0 c=1 -> specificity =   1 */
@@ -83,14 +83,14 @@ body{
     line-height: 1.8;
     color: rgb(255, 255, 255);
     background-color: #353A47;
-    padding: 1em 3em;
-    border-width: 0.125em;  
+    padding: 16px 48px;
+    border-width: 2px;  
     border-color: #EE2E31;
     border-style:  solid;
-    border-radius: 0.0625em;
-    margin: 0.5em;
+    border-radius: 1px;
+    margin: 8px;
    
-    text-shadow: 0.125em 0.125em 0.25em #000000; 
+    text-shadow: 2px 2px 4px #000000; 
 }
 
 /*----Estilo enlaces----*/
