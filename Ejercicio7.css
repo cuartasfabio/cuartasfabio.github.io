@@ -1,0 +1,38 @@
+body{
+    background-color:white;
+    color:black;
+}
+h1{
+    text-align:center;
+    color:red;
+}
+h2{
+    text-align:center;
+    color:green;
+}
+h3{
+    text-align:center;
+    color:blue;
+}
+h4{
+    text-align:center;
+    color:black;
+}
+p{
+    color:gray;
+}
+
+table{
+    border: 1px solid rgb(148, 148, 148);
+}
+th,td{  
+    border: 1px double black;
+    text-align: center;
+}   
+th{ 
+    background-color: rgb(61, 8, 185);
+}
+
+ul,li{
+    color: grey;
+}
