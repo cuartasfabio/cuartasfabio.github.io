@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <title>Ejercicio 13 - Tarea 2</title>
-    <meta charset="UTF-8" name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
     <link rel="stylesheet" href="MapaGeoJSON.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
@@ -12,7 +13,7 @@
     
     <p>Seleccione un archivo GeoJSON: </p>
         
-    <input type="file" id="archivoTexto" onchange="ca.leerArchivoTexto(this.files);">
+    <input type="file" title="Input" id="archivoTexto" onchange="ca.leerArchivoTexto(this.files);">
     
     <p id="nombreArchivo"></p>
     <p id="tamañoArchivo"></p>
