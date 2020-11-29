@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora científica</title>
+    <link rel="stylesheet" href="CalculadoraCientefica.css"/>
+    <script src="CalculadoraBasica.js"></script>
+    <script src="CalculadoraCientefica.js"></script>
+</head>
+<body>
+    <main>
+        <input class="texto" type="text" id="texto" disabled="true"/>
+        <table>
+            <tr>
+                <td><input class="botonM" type="button" value="mrc" onclick="calc.mrc()" ></td>
+                <td><input class="botonM" type="button" value="m-" onclick="calc.mMenos()" ></td>
+                <td><input class="botonM" type="button" value="m+" onclick="calc.mMas()" ></td>
+            </tr>
+            <tr>
+                <td><input class="botonOp" type="button" value="x²" onclick="calc.cuadrado()" ></td>
+                <td><input class="botonOp" type="button" value="2ˣ" onclick="calc.potencia2()" ></td>
+                <td><input class="botonOp" type="button" value="sin" onclick="calc.seno()" ></td>
+                <td><input class="botonOp" type="button" value="cos" onclick="calc.coseno()" ></td>
+                <td><input class="botonOp" type="button" value="tan" onclick="calc.tangente()" ></td>
+            </tr>
+            <tr>
+                <td><input class="botonOp" type="button" value="log" onclick="calc.logaritmo()" ></td>
+                <td><input class="botonOp" type="button" value="Exp" onclick="calc.exponencial()" ></td>
+                <td><input class="botonOp" type="button" value="Abs" onclick="calc.vAbsoluto()" ></td>
+                <td><input class="botonOp" type="button" value="e" onclick="calc.numeroE()" ></td>
+                <td><input class="botonOp" type="button" value="1/x" onclick="calc.inverso()" ></td>
+            </tr>
+            <tr>
+                <td><input class="botonOp" type="button" value="√" onclick="calc.raiz()" ></td>
+                <td><input class="botonOp" type="button" value="10ˣ" onclick="calc.potencia10()" ></td>
+                <td><input class="botonOp" type="button" value="C" onclick="calc.borrar()" ></td>
+                <td><input class="botonOp" type="button" value="←" onclick="calc.borrarUno()" ></td>
+                <td><input class="botonOp" type="button" value="÷" onclick="calc.insertarToken('/')" ></td>
+            </tr>
+            <tr>
+                <td><input class="botonOp" type="button" value="π" onclick="calc.numeroPi()" ></td>
+                <td><input class="boton" type="button" value="7" onclick="calc.insertarToken(7)" ></td>
+                <td><input class="boton" type="button" value="8" onclick="calc.insertarToken(8)" ></td>
+                <td><input class="boton" type="button" value="9" onclick="calc.insertarToken(9)" ></td>
+                <td><input class="botonOp" type="button" value="x" onclick="calc.insertarToken('*')" ></td>
+            </tr>
+            <tr>
+                <td><input class="botonOp" type="button" value="n!" onclick="calc.factorial()" ></td>
+                <td><input class="boton" type="button" value="4" onclick="calc.insertarToken(4)" ></td>
+                <td><input class="boton" type="button" value="5" onclick="calc.insertarToken(5)" ></td>
+                <td><input class="boton" type="button" value="6" onclick="calc.insertarToken(6)" ></td>
+                <td><input class="botonOp" type="button" value="‒" onclick="calc.insertarToken('-')" ></td>
+            </tr>
+            <tr>
+                <td><input class="botonOp" type="button" value="±" onclick="calc.cambioSigno()" ></td>
+                <td><input class="boton" type="button" value="1" onclick="calc.insertarToken(1)" ></td>
+                <td><input class="boton" type="button" value="2" onclick="calc.insertarToken(2)" ></td>
+                <td><input class="boton" type="button" value="3" onclick="calc.insertarToken(3)" ></td>
+                <td><input class="botonOp" type="button" value="+" onclick="calc.insertarToken('+')" ></td>
+            </tr>
+            <tr>
+                <td><input class="botonOp" type="button" value="(" onclick="calc.insertarToken('(')" ></td>
+                <td><input class="botonOp" type="button" value=")" onclick="calc.insertarToken(')')" ></td>
+                <td><input class="boton" type="button" value="0" onclick="calc.insertarToken(0)" ></td>
+                <td><input class="boton" type="button" value="." onclick="calc.insertarToken('.')" ></td>
+                <td><input class="boton" type="button" value="=" onclick="calc.igual()" ></td>
+            </tr>
+        </table>
+    </main>
+<footer>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us">
+    <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" /></a>
+</footer>
+</body>
+</html>
