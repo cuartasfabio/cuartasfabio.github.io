@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgb(168, 168, 168);
+}
+
+textarea {
+    text-align: right;
+    resize: none;
+}
+
+.stack {
+    width: 425px;
+    height: 400px;
+    margin: 20px;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+.texto {
+    width: 425px;
+    height: 25px;
+    margin: 20px;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+.boton {
+    width: 107px;
+    height: 50px;
+    font-size: 25px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background: rgb(221, 221, 221);
+    color: rgb(0, 0, 0);
+}
+
+.botonOp {
+    width: 107px;
+    height: 50px;
+    font-size: 25px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background: rgb(190, 190, 190);
+    color: rgb(0, 0, 0);
+}
+
+.botonM {
+    width: 107px;
+    height: 50px;
+    font-size: 25px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+}
