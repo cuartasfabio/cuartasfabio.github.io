@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 14</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="Reproductor.css" />
+</head>
+<body>
+    <h1>Reproductor de video personalizado</h1>
+    <h2>Usa la API File de html5 para cargar el vídeo</h2>
+    <h2>Con la API Fullscreen de html5 maximiza el video</h2>
+    <h2>Añade substítulos con la API TextTrack de html5</h2>
+
+    <p>Seleccione un archivo de video: </p>
+    <section> 
+        <input type="file" accept="video/*" onchange="ca.leerArchivoVideo(this.files);">
+        <input type="button" value="Fullscreen" onclick="fs.fullscreenOn();">
+    </section> 
+    <video class="video" id="video" width="320" height="240" controls>
+        <source src="" type="video/mp4">
+    </video>
+
+    <script src="Reproductor.js"></script>
+</body>
+</html>
