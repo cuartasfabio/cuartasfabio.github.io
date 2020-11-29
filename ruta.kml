@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"> <Document>
+<name>Rutas</name>
+<Style id="yellowLineGreenPoly">
+<LineStyle>
+<color>7f00ffff</color>
+<width>4</width>
+</LineStyle>
+<PolyStyle>
+<color>7f00ff00</color>
+</PolyStyle>
+</Style>
+<Placemark>
+<name>Estrella_del_Cantabrico</name>
+<description>
+		"Viaje por el Norte de Espana con el maximo confort a bordo
+        del Tren Transcantabrico Gran Lujo. Recorrera las ciudades
+        mas bellas de Pais Vasco, Cantabria, Asturias y Galicia,
+        disfrutando de paisajes unicos y de lo mas selecto de la
+        gastronomia espanola."
+		</description>
+<styleUrl>#yellowLineGreenPoly</styleUrl>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>absoluto</altitudeMode>
+<coordinates>
+-8.534415,42.87901,2357
+-5.850488,43.360874,2357
+-3.824297,43.462176,2357
+-1.981954,43.319754,2357
+</coordinates>
+</LineString>
+</Placemark>
+</Document>
+</kml>
