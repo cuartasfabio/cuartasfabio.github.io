@@ -2,37 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio7 - Tarea1</title>
+    <title>Ejercicio7 - Tarea6</title>
     <link rel="stylesheet" href="Ejercicio7.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="Ejercicio7.js"></script>
 </head>
 <body>
     <main>
-        <h1>Práctica de Computación en el Cliente</h1>
-        <h2>Ejercicio 7</h2>
-        <h3>Modificación de HTML usando JQuery</h3>
-        <p>Escribir un archivo en HTML5 denominado Ejercicio7 (con extensión .html) que
+
+        <button id="detalleMas">Mostrar detalles</button>
+        <h1 id="en1">Práctica de Computación en el Cliente</h1>
+
+
+        <h2 id="h2">Ejercicio 7</h2>
+        <h3 id="h3">Modificación de HTML usando JQuery</h3>
+        <p id="p1">Escribir un archivo en HTML5 denominado Ejercicio7 (con extensión .html) que
             referencie a un archivo CSS denominado Ejercicio7 (con extensión .css) y también debe
             referenciar a un archivo en JavaScript (extensión .js).</p>
-        <p>El HTML debe contener elementos h1, h2,
+        <p id="p2">El HTML debe contener elementos h1, h2,
             h3, p , tablas y otros de libre diseño por el estudiante.</p>
-        <p> Todas las tareas se presentan en la misma sub-carpeta de PRACTICA-3 denominada
+        <button id="modificar">Modificar párrafo y lista</button>
+        <p id="parrafo1"> Todas las tareas se presentan en la misma sub-carpeta de PRACTICA-3 denominada
             Ejercicio-07 que debe contener los archivos:</p>
         <ul>
-            <li>Ejercicio7.html</li>
-            <li>Ejercicio7.css</li>
-            <li>Ejercicio7.js</li>
+            <li><button id="añadir">Añadir elementos a la lista</button><button id="vaciar">Vaciar la lista</button></li>
+            <li id="punto1">Ejercicio7.html</li>
+            <li id="punto2">Ejercicio7.css</li>
+            <li id="punto3">Ejercicio7.js</li>
         </ul>
         <button id="ocultar">Ocultar enunciado</button>
         <button id="mostrar">Mostrar enunciado</button>
 
-        <h4>Lista de tareas:</h4>
-        <table>
+        <h4 id="h4">Lista de tareas:</h4>
+        <table id="tabla">
             <tr>
                 <td>Tarea 1</td>
                 <td>Tarea 2</td>
-                <td>Tarea 3</td>
+                <td></td>
             </tr>
             <tr>
                 <td>Tarea 4</td>
@@ -40,13 +46,18 @@
                 <td>Tarea 6</td>
             </tr>
             <tr>
-                <td>Tarea 7</td>
+                <td></td>
                 <td>Tarea 8</td>
                 <td>Tarea 9</td>
             </tr>
+            <tr>
+                <td>Tarea 10</td>
+                <td>Tarea 11</td>
+                <td>Tarea 12</td>
+            </tr>
         </table>
-
-
+        <button id="ocultar1">Ocultar filas vacías</button>
+        <button id="mostrar1">Mostrar tabla completa</button>
     </main>
     <footer>
         <a href="http://validator.w3.org/check/referer" hreflang="en-us">
