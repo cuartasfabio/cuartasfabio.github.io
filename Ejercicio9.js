@@ -10,7 +10,7 @@ class Parser {
                 console.log(this);
             }
         };
-        xhttp.open("GET", "http://docs.gijon.es/sw/busgijon.asmx/Paradas", true);
+        xhttp.open("GET", "https://docs.gijon.es/sw/busgijon.asmx/Paradas", true);
         xhttp.send();
     }
 
