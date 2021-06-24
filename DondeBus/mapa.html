@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Donde Bus? - Mapa</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="posicionamiento.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Datos con el contenido que aparece en el navegador -->
+
+    <nav class="navbar">
+        <img alt = "Icono-web" src = "multimedia/img/DB_icon.png" class="responsive-logo" />
+        <ul class="navbar-list">
+            <li class="list-item"><a href="index.html">Inicio</a></li>
+                <li class="list-item"><hr class="vertical-hr"></li>
+            <li class="list-item">Mapa</li>
+                <li class="list-item"><hr class="vertical-hr"></li>
+            <li class="list-item"><a href="exportar.html">Exportar datos</a></li>
+        </ul>
+    </nav>
+   
+    <main class="main-mapa">
+        <section>
+            <h1>Mapa general de líneas</h1>
+            <iframe class="iframe-mapa" src="multimedia/PlanodeLineasEMTUSA.PDF#toolbar=0"></iframe>
+            
+        </section>
+
+        <section>
+            <h2>Listado de líneas</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label class="circle-border izquierda">01</label>
+                    <div class="izquierda">
+                        <p>Cerillero</p>
+                        <hr class="horizontal-hr">
+                        <p>Hospital de Cabueñes</p>
+                    </div> 
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=1'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=1'">Localizar buses</button>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <label class="circle-border izquierda">18</label>
+                    <div class="izquierda">
+                        <p>Nuevo Gijón</p>
+                        <hr class="horizontal-hr">
+                        <p>Hospital de Cabueñes</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=18'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=18'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">02</label>
+                    <div class="izquierda">
+                        <p>El corte inglés</p>
+                        <hr class="horizontal-hr">
+                        <p>Hospital de Cabueñes</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=2'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=2'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">20</label>
+                    <div class="izquierda">
+                        <p>Nuevo Roces</p>
+                        <hr class="horizontal-hr">
+                        <p>Somió (La Pipa)</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=20'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=20'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">04</label>
+                    <div class="izquierda">
+                        <p>Lauredal</p>
+                        <hr class="horizontal-hr">
+                        <p>Campus Universitario</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=4'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=4'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">21</label>
+                    <div class="izquierda">
+                        <p>Hospital de Jove</p>
+                        <hr class="horizontal-hr">
+                        <p>La Campa Torres</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=21'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=21'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">06</label>
+                    <div class="izquierda">
+                        <p>El Musel</p>
+                        <hr class="horizontal-hr">
+                        <p>Pol. Porceyo</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=6'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=6'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">24</label>
+                    <div class="izquierda">
+                        <p>San Andrés/Montena</p>
+                        <hr class="horizontal-hr">
+                        <p>La Pedrera/Mareo</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=24'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=24'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">10</label>
+                    <div class="izquierda">
+                        <p>Pumarín</p>
+                        <hr class="horizontal-hr">
+                        <p>Hospital de Cabueñes</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=10'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=10'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">25</label>
+                    <div class="izquierda">
+                        <p>Tremañes</p>
+                        <hr class="horizontal-hr">
+                        <p>Infanzón</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=25'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=25'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">12</label>
+                    <div class="izquierda">
+                        <p>El Cerillero</p>
+                        <hr class="horizontal-hr">
+                        <p>Contrueces</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=12'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=12'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">26</label>
+                    <div class="izquierda">
+                        <p>Gijón</p>
+                        <hr class="horizontal-hr">
+                        <p>Deva</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=26'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=26'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">14</label>
+                    <div class="izquierda">
+                        <p>Sotiello</p>
+                        <hr class="horizontal-hr">
+                        <p>Tremañes</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=14'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=14'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">34</label>
+                    <div class="izquierda">
+                        <p>Plaza Humedal</p>
+                        <hr class="horizontal-hr">
+                        <p>Fátima/Musel (nocturno)</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=34'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=34'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">15</label>
+                    <div class="izquierda">
+                        <p>Nuevo Roces</p>
+                        <hr class="horizontal-hr">
+                        <p>Hospital de Cabueñes</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=15'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=15'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">35</label>
+                    <div class="izquierda">
+                        <p>DRT Nuevo Roces</p>
+                        <hr class="horizontal-hr">
+                        <p>Hospital de Cabueñes</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=35'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=35'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">16</label>
+                    <div class="izquierda">
+                        <p>Estación de Ferrocarril</p>
+                        <hr class="horizontal-hr">
+                        <p>Vega</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=16'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=16'">Localizar buses</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label class="circle-border izquierda">36</label>
+                    <div class="izquierda">
+                        <p>La Juvería</p>
+                        <hr class="horizontal-hr">
+                        <p>Casa del Mar</p>
+                    </div>
+                    <div class="derecha">
+                        <button class="btn-map boton-vert" onclick="location.href='linea.php?id_linea=36'">Detalles</button>
+                        <button class="btn-map boton-vert" onclick="location.href='localizacion.php?id_linea=36'">Localizar buses</button>
+                    </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    
+    <footer class = "footer">
+        <nav class="navbar">
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="multimedia/img/HTML5.png" 
+                alt=" HTML5 Válido!" height="31" width="31" />
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="multimedia/img/CSS3.png"
+                alt="CSS Válido" height="31" width="23" />
+            </a>
+                <hr class="vertical-hr">
+            <ul class="navbar-list">
+                <li class="list-item"><a href="about.html">Más sobre Donde Bus?</a></li>
+                    <li class="list-item"><hr class="vertical-hr"></li>
+                <li class="list-item"><a href="tutorial.html">Tutorial de uso</a></li>
+            </ul>
+        </nav>
+    </footer>   
+</body>
+</html>

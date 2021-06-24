@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<linea nombre="linea1">
+	<buses>
+		<bus>
+			<matricula>3966 FYR</matricula>
+			<modelo>SCANIA N310UA6X2/2</modelo>
+			<parada>181</parada>
+			<minutos>0</minutos>
+			<proximaparada>181</proximaparada>
+		</bus>
+		<bus>
+			<matricula>4095 FYR</matricula>
+			<modelo>SCANIA N310UA6X2/2</modelo>
+			<parada>714</parada>
+			<minutos>0</minutos>
+			<proximaparada>714</proximaparada>
+		</bus>
+		<bus>
+			<matricula>2076-GKH</matricula>
+			<modelo>SCANIA N310UA6X2/2</modelo>
+			<parada>30</parada>
+			<minutos>1</minutos>
+			<proximaparada>30</proximaparada>
+		</bus>
+		<bus>
+			<matricula>4592-JSS</matricula>
+			<modelo>SCANIA N094UB4X2</modelo>
+			<parada>21</parada>
+			<minutos>1</minutos>
+			<proximaparada>21</proximaparada>
+		</bus>
+		<bus>
+			<matricula>2604-KGD</matricula>
+			<modelo>IVECO URBANWAY</modelo>
+			<parada>51</parada>
+			<minutos>0</minutos>
+			<proximaparada>51</proximaparada>
+		</bus>
+		<bus>
+			<matricula>1892-GKH</matricula>
+			<modelo>SCANIA N310UA6X2/2</modelo>
+			<parada>93</parada>
+			<minutos>0</minutos>
+			<proximaparada>93</proximaparada>
+		</bus>
+		<bus>
+			<matricula>3860 FYR</matricula>
+			<modelo>SCANIA N310UA6X2/2</modelo>
+			<parada>132</parada>
+			<minutos>0</minutos>
+			<proximaparada>132</proximaparada>
+		</bus>
+	</buses>
+</linea>

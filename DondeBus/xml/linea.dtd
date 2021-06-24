@@ -1,0 +1,12 @@
+<!ELEMENT linea (buses)>
+    <!ELEMENT buses (bus+)>
+        <!ELEMENT bus (matricula, modelo, parada, minutos, proximaparada)>
+            <!ELEMENT matricula (#PCDATA)>
+            <!ELEMENT modelo (#PCDATA)>
+            <!ELEMENT parada (#PCDATA)>
+            <!ELEMENT minutos (#PCDATA)>
+            <!ELEMENT proximaparada (#PCDATA)>
+<!ATTLIST linea nombre ID #REQUIRED>      
+    
+    
+

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Donde Bus? - Inicio</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="posicionamiento.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <!-- Datos con el contenido que aparece en el navegador -->
+    <nav class="navbar">
+        <img alt = "Icono-web" src = "multimedia/img/DB_icon.png" class="responsive-logo" />
+        <ul class="navbar-list">
+            <li class="list-item">Inicio</li>
+                <li class="list-item"><hr class="vertical-hr"></li>
+            <li class="list-item"><a href="mapa.html">Mapa</a></li>
+                <li class="list-item"><hr class="vertical-hr"></li>
+            <li class="list-item"><a href="exportar.html">Exportar datos</a></li>
+        </ul>
+    </nav>
+   
+    <main class="main-homepage">
+        <section>
+            <h1>Bienvenido a Donde Bus</h1>
+            <p>
+                En <strong>Donde Bus</strong> encontrarás toda la información disponible y actualizada acerca del servicio de autobuses urbanos de la ciudad de <strong>Gijón</strong>.
+            </p>
+            <p>
+                <br>Aquí podrás consultar el <strong>mapa</strong> de líneas de la ciudad, los <strong>trayectos</strong> y <strong>horarios</strong> de cada línea.
+            </p>
+            <p>
+                <br>También puedes consultar la posición de cada autobús en circulación y saber cuanto le queda hasta tu parada.
+            </p>
+            <p>
+                <br>Los datos del sitio sobre horarios, trayectos y localización de autobuses son consultados en tiempo real. Todo haciendo uso del Servicio Web de Autobuses ofrecido por el Ayuntamiento de Gijón.
+            </p>
+            <form action="https://www.gijon.eu/risp_datasets/show/busgijontr">
+                <input type="submit" value="Fuente datos abiertos" />
+            </form>
+            <p>
+                <br>Si quieres explorar más a fondo las funciones de Donde Bus te invitamos a seguir la siguiente guía tutorial de uso.
+            </p>
+            <form action="tutorial.html">
+                <input type="submit" value="Tutorial de uso" />
+            </form>
+        </section>
+    </main>
+    
+    <footer class = "footer">
+        <nav class="navbar">
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="multimedia/img/HTML5.png" 
+                alt=" HTML5 Válido!" height="31" width="31" />
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="multimedia/img/CSS3.png"
+                alt="CSS Válido" height="31" width="23" />
+            </a>
+                <hr class="vertical-hr">
+            <ul class="navbar-list">
+                <li class="list-item"><a href="about.html">Más sobre Donde Bus?</a></li>
+                    <li class="list-item"><hr class="vertical-hr"></li>
+                <li class="list-item"><a href="tutorial.html">Tutorial de uso</a></li>
+            </ul>
+        </nav>
+    </footer>   
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Donde Bus? - Exportar Línea</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="posicionamiento.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="Llegadas.js"></script>
+    <script src="LectorArchivos.js"></script>
+</head>
+<body>
+    <!-- Datos con el contenido que aparece en el navegador -->
+    <nav class="navbar">
+        <img alt = "Icono-web" src = "multimedia/img/DB_icon.png" class="responsive-logo" />
+        <ul class="navbar-list">
+            <li class="list-item"><a href="index.html">Inicio</a></li>
+                <li class="list-item"><hr class="vertical-hr"></li>
+            <li class="list-item"><a href="mapa.html">Mapa</a></li>
+                <li class="list-item"><hr class="vertical-hr"></li>
+            <li class="list-item">Exportar datos</li>
+        </ul>
+    </nav>
+   
+    <main class="main-mapa">
+        <section>
+            <h1>Exportar datos de una línea (XML)</h1>
+            <div class="grid-container-exp">
+                <div class="item1"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(1)">Descargar</button> | Línea 01 | El Cerillero - Hospital de Cabueñes</div>
+                <div class="item2"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(18)">Descargar</button> | Línea 18 | Nuevo Gijón - Hospital de Cabueñes</div>
+                <div class="item3"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(2)">Descargar</button> | Línea 02 | El Corte Inglés - Hospital Cabueñes</div>
+                <div class="item4"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(20)">Descargar</button> | Línea 20 | Nuevo Roces - Montevil - Somió</div>
+                <div class="item5"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(4)">Descargar</button> | Línea 04 | El Lauredal - Campus Universitario</div>
+                <div class="item6"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(21)">Descargar</button> | Línea 21 | Hospital de Jove - La Campa Torres</div>
+                <div class="item7"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(6)">Descargar</button> | Línea 06 | El Musel - Pol. Porceyo/Porceyo</div>
+                <div class="item8"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(24)">Descargar</button> | Línea 24 | San Andrés/Montena - Mareo</div>
+                <div class="item9"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(10)">Descargar</button> | Línea 10 | Pumarín - Hospital de Cabueñes</div>
+                <div class="item10"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(25)">Descargar</button> | Línea 25 | Tremañes - Infanzón</div>
+                <div class="item11"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(12)">Descargar</button> | Línea 12 | El Cerillero - Contrueces</div>
+                <div class="item12"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(26)">Descargar</button> | Línea 26 | Gijón - Deva</div>
+                <div class="item13"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(14)">Descargar</button> | Línea 14 | Sotiello - Pol. Somonte - Tremañes</div>
+                <div class="item14"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(34)">Descargar</button> | Línea 34 | Plaza Humedal - Fátima - Musel</div>
+                <div class="item15"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(15)">Descargar</button> | Línea 15 | Nuevo Roces - Hospital de Cabueñes</div>
+                <div class="item16"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(35)">Descargar</button> | Línea 35 | DRT Nuevo Roces - Hospital</div>
+                <div class="item17"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(16)">Descargar</button> | Línea 16 | Estación de Ferrocarril - Vega</div>
+                <div class="item18"><button class="btn-exp" onclick="llegadas.esportarXMLLlegadas(36)">Descargar</button> | Línea 36 | La Juvería - Casa del Mar</div>
+              </div>
+        </section>
+
+        <section>
+            <h2>Subir y visualizar archivo</h2>
+            <p><input id="subirArchivo" type="file" title="Input" name="Archivos" onchange="lda.calcularTamañoArchivo();"></p>
+            <p>Tamaño: <span id="tamaño">0</span></p>
+            <span id="nombres"></span>
+            <pre id="areaTexto"></pre>
+            <pre id="areaJSON"></pre>
+            <pre id="areaXML"></pre>
+            
+        </section>
+    </main>
+    
+    <footer class = "footer">
+        <nav class="navbar">
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="multimedia/img/HTML5.png" 
+                alt=" HTML5 Válido!" height="31" width="31" />
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="multimedia/img/CSS3.png"
+                alt="CSS Válido" height="31" width="23" />
+            </a>
+                <hr class="vertical-hr">
+            <ul class="navbar-list">
+                <li class="list-item"><a href="about.html">Más sobre Donde Bus?</a></li>
+                    <li class="list-item"><hr class="vertical-hr"></li>
+                <li class="list-item"><a href="tutorial.html">Tutorial de uso</a></li>
+            </ul>
+        </nav>
+    </footer>   
+</body>
+</html>
