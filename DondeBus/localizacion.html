@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width">
+        <meta name="Author" content="Fabio"/>
+        <title>Donde Bus? - Buses en circulación</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="posicionamiento.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Datos con el contenido que aparece en el navegador -->
+        <nav class="navbar">
+            <img alt = "Icono-web" src = "multimedia/img/DB_icon.png" class="responsive-logo" />
+            <ul class="navbar-list">
+                <li class="list-item"><a href="index.html">Inicio</a></li>
+                    <li class="list-item"><hr class="vertical-hr"></li>
+                <li class="list-item"><a href="mapa.html">Plano Líneas</a></li>
+                    <li class="list-item"><hr class="vertical-hr"></li>
+                <li class="list-item"><a href="exportar.html">Descargas</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-mapa">
+            <h1>Autobuses línea 1</h1>
+            <h2>Última actualización: 25-06-2021 00:54:58</h2>
+            <ul><li><div class='line-llegadas' id='parada-180'><div class= 'list-item-llegada'> <span>Parada 1 | CAMINO DE RUBÍN</span> </div></div></li><li><div class='line-llegadas' id='parada-181'><div class= 'list-item-llegada'> <span>Parada 2 | INEM</span> </div></div></li><li><div class='line-llegadas' id='parada-141'><div class= 'list-item-llegada'> <span>Parada 3 | GRAN CAPITÁN</span> </div></div></li><li><div class='line-llegadas' id='parada-136'><div class= 'list-item-llegada'> <span>Parada 4 | PRAO DEL CUBANO</span> </div></div></li><li><div class='line-llegadas' id='parada-137'><div class= 'list-item-llegada'> <span>Parada 5 | PERU</span> </div></div></li><li><div class='line-llegadas' id='parada-8'><div class= 'list-item-llegada'> <span>Parada 6 | CASA DEL MAR</span> </div></div></li><li><div class='line-llegadas' id='parada-9'><div class= 'list-item-llegada'> <span>Parada 7 | CUATRO CAMINOS</span> </div></div></li><li><div class='line-llegadas' id='parada-10'><div class= 'list-item-llegada'> <span>Parada 8 | SANTA OLAYA</span> </div></div></li><li><div class='line-llegadas' id='parada-138'><div class= 'list-item-llegada'> <span>Parada 9 | DOS DE MAYO</span> </div></div></li><li><div class='line-llegadas' id='parada-214'><div class= 'list-item-llegada'> <span>Parada 10 | PLAZA DE LA HABANA</span> </div></div></li><li><div class='line-llegadas' id='parada-714'><div class= 'list-item-llegada'> <span>Parada 11 | COMISARIA</span> </div></div></li><li><div class='line-llegadas' id='parada-13'><div class= 'list-item-llegada'> <span>Parada 12 | ACUARIO</span> </div></div></li><li><div class='line-llegadas' id='parada-14'><div class= 'list-item-llegada'> <span>Parada 13 | MUSEO DEL FERROCARRIL</span> </div></div></li><li><div class='line-llegadas' id='parada-15'><div class= 'list-item-llegada'> <span>Parada 14 | PEDRO DURO</span> </div></div></li><li><div class='line-llegadas' id='parada-16'><div class= 'list-item-llegada'> <span>Parada 15 | F.E.V.E.</span> </div></div></li><li><div class='line-llegadas' id='parada-17'><div class= 'list-item-llegada'> <span>Parada 16 | GOTA DE LECHE (LADO MAGNUS BLIKSTAD)</span> </div></div></li><li><div class='line-llegadas' id='parada-18'><div class= 'list-item-llegada'> <span>Parada 17 | BEGOÑA</span> </div></div></li><li><div class='line-llegadas' id='parada-753'><div class= 'list-item-llegada'> <span>Parada 18 | RENDUELES LLANOS</span> </div></div></li><li><div class='line-llegadas' id='parada-21'><div class= 'list-item-llegada'> <span>Parada 19 | RAMÓN Y CAJAL</span> </div></div></li><li><div class='line-llegadas' id='parada-22'><div class= 'list-item-llegada'> <span>Parada 20 | CODEMA</span> </div></div></li><li><div class='line-llegadas' id='parada-83'><div class= 'list-item-llegada'> <span>Parada 21 | PLAZA DE TOROS</span> </div></div></li><li><div class='line-llegadas' id='parada-84'><div class= 'list-item-llegada'> <span>Parada 22 | LA ASUNCIÓN</span> </div></div></li><li><div class='line-llegadas' id='parada-85'><div class= 'list-item-llegada'> <span>Parada 23 | LAS MESTAS</span> </div></div></li><li><div class='line-llegadas' id='parada-206'><div class= 'list-item-llegada'> <span>Parada 24 | LA GUÍA</span> </div></div></li><li><div class='line-llegadas' id='parada-3'><div class= 'list-item-llegada'> <span>Parada 25 | CHALETS</span> </div></div></li><li><div class='line-llegadas' id='parada-363'><div class= 'list-item-llegada'> <span>Parada 26 | CTRA. VILLAVICIOSA (ESCUELA DE LA MARINA)</span> </div></div></li><li><div class='line-llegadas' id='parada-29'><div class= 'list-item-llegada'> <span>Parada 27 | INTRA</span> </div></div></li><li><div class='line-llegadas' id='parada-30'><div class= 'list-item-llegada'> <span>Parada 28 | JARDÍN BOTÁNICO</span> </div></div></li><li><div class='line-llegadas' id='parada-31'><div class= 'list-item-llegada'> <span>Parada 29 | PARQUE TECNOLÓGICO</span> </div></div></li><li><div class='line-llegadas' id='parada-33'><div class= 'list-item-llegada'> <span>Parada 30 | TANATORIO</span> </div></div></li><li><div class='line-llegadas' id='parada-34'><div class= 'list-item-llegada'> <span>Parada 31 | HOSPITAL DE CABUEÑES</span> </div></div></li></ul>
+            <script onload='llegadas.consultaJSONLlegadas(1)' src='Llegadas.js'></script>            
+
+        </main>
+
+        <footer class = "footer">
+            <nav class="navbar">
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="multimedia/img/HTML5.png" 
+                    alt=" HTML5 Válido!" height="31" width="31" />
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="multimedia/img/CSS3.png"
+                    alt="CSS Válido" height="31" width="23" />
+                </a>
+                    <hr class="vertical-hr">
+                <ul class="navbar-list">
+                    <li class="list-item"><a href="about.html">Más sobre Donde Bus?</a></li>
+                        <li class="list-item"><hr class="vertical-hr"></li>
+                    <li class="list-item"><a href="tutorial.html">Tutorial de uso</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </body>
+</html>
