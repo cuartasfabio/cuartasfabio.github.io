@@ -1,14 +1,10 @@
-/* "se debe evitar su utilización" T04-D63 */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+/*----Estilo general----*/
 
+/* a=0 b=0 c=2 -> specificity =   2 */
 html, body {
     height: 100%;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .navbar {
     background-color: #810000;
     color: #F5EFEF;
@@ -18,37 +14,36 @@ html, body {
     font-size: 20px;
     padding: 0 20px;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .navbar-list {
     list-style-type: none;
 }
-
 .navbar-list .list-item {
     display: inline-block;
     padding: 20px 10px;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .list-item-llegada {
     display: inline-block;
     padding: 20px 10px;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .line-llegadas {
     display: flex;
     justify-content: space-between;
     margin: 5px;
     border-bottom: 1px solid #810000;
 }
-
+/* a=0 b=1 c=1 -> specificity =   11 */
 .navbar a {
     color: #F5EFEF;
     text-decoration: none;
 }
-
+/* a=0 b=2 c=1 -> specificity =   21 */
 .navbar a:hover {
     color: #FFCB8E;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .footer {
     position: static;
     padding-top: 1%;
@@ -59,25 +54,25 @@ html, body {
     color: #F5EFEF;
     
 }
-
+/* a=0 b=2 c=0 -> specificity =   20 */
 .footer .navbar {
     justify-content: center;
     font-size: 16px;
     margin: 20px 0 0 0;
 }
-
+/* a=0 b=0 c=1 -> specificity =   1 */
 body {
     background-image: url("multimedia/img/gijon3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .responsive-logo {
     width: 100%;
     max-width: 360px;
     height: auto;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .main-homepage {
     background: linear-gradient(180deg, rgba(245,239,239,1) 60%, rgba(245,239,239,0) 70%);
     width: 50%;
@@ -87,7 +82,7 @@ body {
     text-align: justify;
     border-radius: 12px;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .main-mapa {
     background: linear-gradient(180deg, rgba(245,239,239,1) 100%, rgba(245,239,239,0) 100%);
     width: 50%;
@@ -96,17 +91,23 @@ body {
     padding: 20px;
     text-align: justify;
 }
-
+/* a=0 b=1 c=1 -> specificity =   11 */
 .main-homepage h1 {
     text-align: center;
 }
-
+/* a=0 b=0 c=2 -> specificity =   2 */
 p, ul{
     font-size: 1.3em;
 }
-
+/* a=0 b=0 c=0 -> specificity =   0 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* a=0 b=0 c=7 -> specificity =   7 */
 body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-
+/* a=0 b=1 c=1 -> specificity =   11 */
 input[type=submit] {
     background-color: #810000;
     font-size: 1em;
@@ -117,28 +118,28 @@ input[type=submit] {
     margin: 4px 2px;
     cursor: pointer;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .vertical-hr {
     width: 1px; 
     height: 15px; 
     display: inline-block;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .horizontal-hr {
     border: 2px solid #E97171;
     border-radius: 2px;
 }
-
+/* a=0 b=2 c=0 -> specificity =   20 */
 .navbar>.vertical-hr {
     margin-left: 10px;
 }
-
+/* a=0 b=0 c=1 -> specificity =   1 */
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
     color: #810000;
 }
-
+/* a=0 b=0 c=1 -> specificity =   1 */
 h2 {
     font-size: 2em;
     margin-bottom: 10px;
@@ -146,17 +147,22 @@ h2 {
     color: #E97171; 
 }
 
+h3 {
+    text-align: center;
+    margin: 10px;
+}
+/* a=0 b=1 c=0 -> specificity =   10 */
 .iframe-mapa {
     width: 100%;
     height: 500px;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .grid-container {
     display: grid;
     grid-template: none / auto auto;
-    padding: 10px;
+    padding: 5px;
 }
-  
+/* a=0 b=1 c=1 -> specificity =   11 */
 .grid-container > div {
     background-color: #F5EFEF;
     padding: 10px;
@@ -165,29 +171,26 @@ h2 {
     box-shadow: 0 10px 20px rgb(0 0 0 / 50%);
     border-radius: 6px;
 }
-
-
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .circle-border {
-    background-color: #810000;
-    color: white;
+    background-color: #E97171;
     font-size: 1.5em;
     padding: 12px;
     border-radius: 50px;
     margin-right: 10px;
 }
-
+/* a=0 b=0 c=1 -> specificity =   1 */
 ul {
     margin: 20px;
     list-style-type: none;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .grid-container-exp {
     display: grid;
     grid-template: none / auto auto;
     padding: 10px;
 }
-  
+/* a=0 b=1 c=1 -> specificity =   11 */
 .grid-container-exp > div {
     background-color: #F5EFEF;
     padding: 10px;
@@ -196,7 +199,7 @@ ul {
     box-shadow: 0 10px 20px rgb(0 0 0 / 50%);
     border-radius: 6px;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .btn-exp {
     background-color: #810000;
     font-size: 1em;
@@ -207,42 +210,53 @@ ul {
     margin: 4px 2px;
     cursor: pointer;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .btn-map {
     background-color: #810000;
     font-size: 1em;
-    border: none;
+    border: 2px solid white;
     color: white;
-    padding: 4px 16px;
+    padding: 4px 8px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.btn-map:hover {
+    background-color: white;
+    font-size: 1em;
+    color: black;
+    border: 2px solid #810000;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .img-linea {
     width: 100%;
     height: auto;
     margin-top: 20px;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .img-tuto {
     width: 60%;
     height: auto;
     margin-top: 10px;
     border: 2px solid #810000;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .icono-bus {
     width: 60px;
     height: 30px;
     vertical-align: middle;
 }
-
+/* a=0 b=0 c=1 -> specificity =   1 */
 span {
     vertical-align: middle;
     font-weight: bold;
 }
-
+/* a=0 b=1 c=1 -> specificity =   11 */
 li > .list-item-llegada {
     color: #810000;
     border: 2px solid #810000;

@@ -21,17 +21,17 @@
 .clearTodo {
     clear:both;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .centrado {
     margin: auto;
     width: 50%;
     padding: 10px;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .flexible {
     display: flex;
 }
-
+/* a=0 b=1 c=0 -> specificity =   10 */
 .boton-vert {
     display: block;
     margin-left: 20px;
